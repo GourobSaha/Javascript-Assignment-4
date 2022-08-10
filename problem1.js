@@ -1,21 +1,22 @@
-//Problem - 1
+//Problem - 1: Radian to Degree Conversion
 //Declaring Function
 
 function radianToDegree(radian){
 
-    
+    let degree = 0;
 
     if(typeof radian !== "number"){
-        console.log("Please enter number only!");
+        return "Please enter number only!";
     }
     else if (radian < 0){
-        console.log("Number should be positive!");
+        return "Number should be positive!";
     }
-    
-    // Formula to convert radian to degree;
-    let degree = (radian * (180 / Math.PI)).toFixed(2);
-    return degree;
+    else{
+        // Formula to convert radian to degree;
+        degree = (radian * (180 / Math.PI)).toFixed(2);
+        return degree;
+    }
 
 }
 
-console.log(radianToDegree(21));
+console.log(radianToDegree(-10));
