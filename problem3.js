@@ -26,4 +26,4 @@ function oilPrice(petrolPerLitre, dieselPerLitre, octanePerLitre){
 
 }
 
-console.log(oilPrice(30,20,10));
+console.log(oilPrice(1,0,2));

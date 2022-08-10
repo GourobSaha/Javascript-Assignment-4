@@ -4,7 +4,6 @@
 function radianToDegree(radian){
 
     let degree = 0;
-
     if(typeof radian !== "number"){
         return "Please enter number only!";
     }
@@ -19,4 +18,4 @@ function radianToDegree(radian){
 
 }
 
-console.log(radianToDegree(-10));
+console.log(radianToDegree(10));

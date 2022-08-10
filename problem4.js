@@ -5,7 +5,7 @@ function publicBusFare(totalPerson){
 
     const reservedBusContains = 50;
     const microBusContains = 11;
-    const publicBusFare = 250;
+    const busFare = 250;
 
     if(typeof totalPerson !== "number"){
         return "Please enter number only!";
@@ -19,10 +19,10 @@ function publicBusFare(totalPerson){
         // calculating remaining persons from microbus
         let extraPersonFromMicroBus = extraPersonFromBus % microBusContains;
         // calculating public bus fare for remaining persons
-        let totalBusFare = extraPersonFromMicroBus * publicBusFare;
+        let totalBusFare = extraPersonFromMicroBus * busFare;
         return totalBusFare;
     }
     
 }
 
-console.log(publicBusFare(253));
+console.log(publicBusFare(105));
